@@ -1,0 +1,55 @@
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid black;
+}
+/*Para cualquier casilla que tenga una hora esta tendra un fondo de color verde */
+
+tbody tr td:first-child {
+  background-color: green;
+}
+
+/*El recreo va a tener un color amarillo */
+tbody tr:nth-child(3) th:nth-child(2) {
+  background-color: yellow;
+}
+
+/*El enlace visitado sera de color rojo(Clickeado) y el enlace no visitado sera de color verde(Clickeado)*/
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: green;
+}
+
+a:visited {
+  color: red;
+}
+
+/* Toda la columna del Viernes aumentara el doble si pasamos por encima de ella con el ratón */
+
+tr th:last-child:hover,
+tr td:last-child:hover {
+  font-size: 2em;
+}
+
+/*El tamaño de la primera letra tendrá el doble de tamaño*/
+thead tr th::first-letter {
+  font-size: 2em;
+}
+
+/* Cualquier tipo de campo obligatorio a rellenar deberá de tener un color rojo */
+input:required {
+  border: 1px solid red;
+  padding: 10px;
+}
+/* Añade un * en rojo detrás de las etiquetas */
+label::after {
+  color: red;
+  content: "*";
+}

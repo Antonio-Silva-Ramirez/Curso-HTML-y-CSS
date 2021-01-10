@@ -1,0 +1,53 @@
+/* Vamos a centrar el titulo */
+h1 {
+  text-align: center;
+}
+
+/* Vamos a asignar un tamaño en concreto a todas las imágenes que vallamos a utitlizar*/
+img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Para las clases que sean primera esta tendra un fondo de color rojo y el color de la letra sera blanco*/
+.primera {
+  background-color: red;
+  color: white;
+}
+
+/* Para las celdas que contengan la palabra gb vamos a poner un color gris al fondo y un centrado para el texto */
+#fila .gb {
+  background-color: grey;
+  font-size: 2em;
+  text-align: center;
+}
+
+/* Para toda las filas de las que se van ha hablar van a tener un color de fondo rojo*/
+#listas li {
+  color: red;
+}
+
+/* Para la celda que dice que tiene 5 horas de tiempo de carga, va ha tener un color amarillo, con respecto al fondo de esta*/
+#cinco {
+  background-color: yellow;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Vamos a definir el estilo de los bordes*/
+table {
+  border-collapse: collapse;
+  margin: 0px auto;
+  width: 50%;
+}
+
+td,
+th {
+  border: 1px solid black;
+}
+
+/* Vamos a poner una condición y esta va a ser la siguiente: si colspan=2 o 3, esta deberá de tener el color de la celda azul*/
+[colspan="2"],
+[colspan="3"] {
+  background-color: blue;
+}
